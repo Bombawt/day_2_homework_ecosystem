@@ -5,7 +5,7 @@ Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 require_relative('../fish')
 require_relative('../bears')
 
-class BearsTest < MiniTest::Test
+class BearTest < MiniTest::Test
 
   def setup
     @fish1=Fish.new("Trout")
@@ -16,7 +16,7 @@ class BearsTest < MiniTest::Test
 
     # @river=River.new("Yellowstone", @fish)
 
-    @bear=Bears.new("Yogi", "Grizzly")
+    @bear=Bear.new("Yogi", "Grizzly")
   end
 
   def test_bears_name
@@ -39,7 +39,7 @@ class BearsTest < MiniTest::Test
     assert_equal(3, @bear.stomach_contents)
   end
 
-
+ 
 
 
 

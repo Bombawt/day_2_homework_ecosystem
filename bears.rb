@@ -1,4 +1,4 @@
-class Bears
+class Bear
 
   attr_reader :name, :type, :stomach
   attr_writer :name, :type, :stomach
@@ -17,5 +17,6 @@ class Bears
     @stomach.push(fish)
   end
 
+  
 
 end

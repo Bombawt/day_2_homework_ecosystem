@@ -16,6 +16,8 @@ def setup
 
   @fish = [@fish1, @fish2, @fish3]
 
+  @bear=Bear.new("Yogi", "Grizzly")
+
   @river=River.new("Yellowstone", @fish)
 end
 
@@ -36,6 +38,15 @@ def test_remove_fish()
   @river.remove_fish(@fish1)
   assert_equal(2, @river.fish_count())
 end
+
+def test_bear_takes_fish_from_river()
+  @bear.add_fish(@fish2)
+  @river.remove_fish(@fish2)
+  assert_equal(1, @bear.stomach_contents)
+  assert_equal(2, @river.fish_count())
+end
+
+
 
 
 
