@@ -9,7 +9,7 @@ require_relative('../bears')
 class BearsTest < MiniTest::Test
 
   def setup
-    @bear1=Bears.new("Yogi")
+    @bear1=Bears.new("Yogi", "Grizzly")
   end
 
   def test_bears_name
