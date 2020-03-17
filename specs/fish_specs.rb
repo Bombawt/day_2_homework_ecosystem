@@ -8,6 +8,8 @@ class FishTest < MiniTest::Test
 
   def setup
     @fish1 = Fish.new("Salmon")
+    @fish2 = Fish.new("Trout")
+    @fish3 = Fish.new("Eel")
   end
 
  def test_fish_name

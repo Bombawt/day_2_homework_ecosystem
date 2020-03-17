@@ -7,8 +7,13 @@ require_relative('../river')
 
 class RiverTest < MiniTest::Test
 
+def setup
+  @river=River.new("Yellowstone")
+end
 
-
+def test_river_name
+  assert_equal("Yellowstone", @river.name)
+end
 
 
 
